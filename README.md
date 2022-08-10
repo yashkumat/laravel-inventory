@@ -1,65 +1,113 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+   Technical Documentation Page \*{ margin: 0; padding: 0; box-sizing: border-box; } #navbar{ position: fixed; width: 300px; top: 0; left: 0; background-color: rgb(220,220,220, 0.5); height: 100%; display: flex; flex-direction: column; justify-content: center; } @media (min-width: 600px) { #main-doc{ position: relative; width: calc(100% - 400px); margin: 2em; left: 300px; } #navbar li{ list-style: none; padding: 1em; border: 1px solid black; } #navbar ul{ margin-top: 4em; } #navbar a{ text-decoration: none; color: rgb(30, 30, 30); } #navbar h1{ font-size: 2em; } .main-section{ padding: 2em; line-height: 2em; font-size: 1em; } .main-section p{ text-align: justify; } .main-section code{ background-color: rgb(220,220,220, 0.5); padding: 0.5em; } .main-section ul{ margin-left: 2em; padding: 1em; } .main-section h1{ margin-bottom: 1em; font-size: 2em; } } @media (max-width: 600px) { #navbar{ position: relative; background-color: rgb(220,220,220, 0.5); width: 100%; } #navbar h1{ text-align:center; margin-bottom: 1em; font-size: 2em; } #navbar ul{ text-align: center; } #navbar li{ list-style: none; padding: 0.5em; border: 1px solid black; } #navbar a{ text-decoration: none; color: rgb(30, 30, 30); } #main-doc{ line-height: 1.5em; margin: 1em; } #main-doc h1{ font-size: 2em; padding: 1em; } #main-doc ul{ padding: 1em; } #main-doc code{ background-color: rgb(220,220,220, 0.5); word-wrap:break-word; } #main-doc p{ text-align: justify; } }
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sales And Inventory Management System
+=====================================
 
-## About Laravel
+*   [Introduction](#introduction)
+*   [Features](#features)
+*   [Prerequisites](#prerequisites)
+*   [Installation](#installation)
+*   [Setup](#setup)
+*   [Usage](#usage)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Introduction
+============
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Sales and Inventory management system aims to serve customer effortlessely and manage inventory efficiently. This system will help the staff/employees to have a faster way of recording details of each transation and improve the manual system of monitoring inventory. The system will provide a good service to the company like better transaction process that brings bigger profit.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Technology Stack
 
-## Learning Laravel
+*   Laravel
+*   Bootstrap
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Features
+========
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+This sales and inventory management system is loaded with following features:
 
-## Laravel Sponsors
+*   Smart Dashboard for Sales and Inventory Overview
+*   Solid Authentication and Role based access control
+*   Powerfull Search option
+*   Easily Add, Edit, Remove item from inventory + Manage item Quantity
+*   Create bill with automated stock management
+*   Add, Edit, Remove Vendor + Manage their Bills
+*   Record Customer transaction effortlessely
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Prerequisites
+=============
 
-### Premium Partners
+You will need following dependecies installed in your system
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+*   PHP
+*   DBMS - phpmyadmin or any
+*   Composer
 
-## Contributing
+Installation
+============
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Step 1: Open the following github repository https://github.com/yashkumat/laravel-inventory.git
 
-## Code of Conduct
+Step 2: Download the repository and Open the folder in code editor of your choice
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Step 3: Rename .env.example to just .env
 
-## Security Vulnerabilities
+Step 4: Change APP\_NAME and Database settings in .env file
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+`DB_CONNECTION=mysql   DB_HOST=127.0.0.1   DB_PORT=3306   DB_DATABASE=your_database_name   DB_USERNAME=your_database_system_username   DB_PASSWORD=your_database_system_password   `
 
-## License
+Step 5: Run following command in command prompt or terminal in root directory
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# laravel-inventory
+`php artisan key:generate`  
+`php artisan migrate`  
+`php artisan serve`
+
+Step 6: Go to link localhost:8000
+
+Setup
+=====
+
+Welcome screen will show APP\_NAME and login link
+
+First we will have to create admin which can then can create other profiles with different access control
+
+Run following command in command prompt or terminal in root directory
+
+`$user = new App\Models\User();   $user->password = Hash::make('Admin@'2022);   $user->email = 'admin@store-name.com';   $user->name = 'Admin';   $user->isAdmin = '1';   $user->save();`
+
+Usage
+=====
+
+### Dashboard
+
+*   Overview of total sale, total profit, total purchase, total customers, Low quantity items total debt, total credit, etc
+
+### Authentication and Access Control
+
+*   Only Admin get full details about product like its cost price, expense per unit, etc
+*   Only Admin can create staff account which has only required limited access
+*   User screen shows only store details
+*   Login / Logout with session management
+
+### Inventory
+
+*   Add, Edit, Hide item
+*   Manage quantity with vendors bill
+*   Add item to bill
+*   Highlight low quantity items
+
+### Vendor
+
+*   Manage vendors and their bills
+
+### Bill
+
+*   Make bill with discount
+*   On page search feature
+*   Add mode of payment, GST number, etc
+*   Save bill with pending status and amount.
+
+### User Management
+
+*   Make user
+*   Assign admin status to any user
+*   Activate/Deactivate any user
