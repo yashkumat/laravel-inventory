@@ -55,6 +55,7 @@ Step 4: Change APP\_NAME and Database settings in .env file
 
 Step 5: Run following command in command prompt or terminal in root directory
 
+`composer install`
 `php artisan key:generate`  
 `php artisan migrate`  
 `php artisan serve`
