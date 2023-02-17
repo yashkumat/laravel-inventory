@@ -71,14 +71,12 @@ First we will have to create admin which can then can create other profiles with
 
 Run following command in command prompt or terminal in root directory
 
-`$user = new App\Models\User();   
-
+`$user = new App\Models\User();
 $user->password = Hash::make('Admin@'2022);   
 $user->email = 'admin@store-name.com';   
 $user->name = 'Admin';   
 $user->isAdmin = '1';   
-$user->save();
-`
+$user->save();`
 
 Usage
 =====
